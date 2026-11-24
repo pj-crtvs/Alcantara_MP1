@@ -1,0 +1,10 @@
+{
+  "name": "MP1",
+  "version": "1.0.0",
+  "description": "This project is my Machine Project 1 in CMSC 110: Internet Technologies",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "private": true
+}
