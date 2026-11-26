@@ -235,6 +235,7 @@
 }
 
 .flavorVibeBadgeText {
+  line-height: 0.8;
   display: inline-block;
   background-color: #fff3ea;
   color: #f16e1c;
