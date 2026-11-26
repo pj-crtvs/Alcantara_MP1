@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <link rel="icon" type="image/png" href="assets/image/plamiglogo.png">
+  <!-- 2 CSS files: main.css at contactStyle.css -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/contactStyle.css">
+</head>
+<body>
+
+  <!-- Parang sliding announcement bar like yung sa balita -->
+  <div class="slidingTickerBar">
+    <div class="slidingTickerText">
+      FREE NATIONWIDE SHIPPING ON ORDERS OVER ₱999
+      <span>•</span> ICE-COLD NOSTALGIA DELIVERED
+      <span>•</span> OR IS DER NA KAU MGA BES! YOHOOO!
+      <span>•</span> PROJECT NI PIJEY SA CMSC 110 [MP1]
+      <span>•</span> FREE NATIONWIDE SHIPPING ON ORDERS OVER ₱999
+      <span>•</span> ICE-COLD NOSTALGIA DELIVERED
+    </div>
+  </div>
+
+  <!-- Header and Navbar -->
+  <header class="mainHeader">
+    <div class="pageContainer navbarWrapper">
+      <a href="index.html" class="brandLogoLink">
+        <img src="assets/image/plamiglogo.png" alt="Plamig Logo" class="brandLogoImg">
+        <span class="brandLogoText">PLAMIG<span class="brandLogoDot">.</span></span>
+      </a>
+
+      <nav>
+        <ul class="navLinksList">
+          <li><a href="index.html" class="navItemLink">Home</a></li>
+          <li><a href="about.html" class="navItemLink">Our Story</a></li>
+          <li><a href="products.html" class="navItemLink">Flavors &amp; Packs</a></li>
+          <li><a href="gallery.html" class="navItemLink">Gallery</a></li>
+          <li><a href="reviews.html" class="navItemLink">Reviews</a></li>
+          <li><a href="contact.html" class="navItemLink activePage">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="navActionsRight">
+        <button class="iceboxCartButton" id="iceboxCartTrigger">
+          <img src="assets/icons/cartIcon.svg" alt="Cart" class="cartIconImg">
+          <span>Icebox</span>
+          <span class="cartBadgeNumber" id="headerCartBadge">0</span>
+        </button>
+        <a href="products.html" class="orderHeaderBtn">Order a Pack</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="innerPageHeaderSection">
+      <div class="pageContainer">
+        <span class="sectionSmallTag">DIRECT INQUIRIES</span>
+        <h1 class="innerPageMainTitle">LET’S TALK PALAMIG</h1>
+        <p class="innerPageSubDesc">
+          Questions, collabs, or bulk orders? Find our tasting room or drop a message below.
+        </p>
+      </div>
+    </section>
+
+    <section class="contactPageSection">
+      <div class="pageContainer">
+
+        <div class="contactSplitLayoutGrid">
+
+          <div class="contactDetailsLeftCol">
+
+            <div class="contactInfoCardBox">
+              <h3 class="contactCardHeadingTitle">
+                <img src="assets/icons/mapPinIcon.svg" alt="Location Pin">
+                Headquarters &amp; Tasting Room
+              </h3>
+              <p class="contactCardBodyText">
+                UNIVERSITY OF THE PHILIPPINES - BAGUIO | BAGUIO CITY, 2600
+              </p>
+            </div>
+
+            <div class="contactInfoCardBox">
+              <h3 class="contactCardHeadingTitle">
+                <img src="assets/icons/clockIcon.svg" alt="Clock">
+                Operating Hours
+              </h3>
+              <p class="contactCardBodyText">
+                <strong>Monday – Friday:</strong> 9:00 AM – 6:00 PM<br>
+                <strong>Saturday (Pop-Up Pickups):</strong> 10:00 AM – 4:00 PM<br>
+                <strong>Sunday:</strong> Closed (Out chilling at the beach)
+              </p>
+            </div>
+
+            <div class="contactInfoCardBox">
+              <h3 class="contactCardHeadingTitle">
+                <img src="assets/icons/phoneIcon.svg" alt="Phone">
+                Wholesale &amp; Direct Support
+              </h3>
+              <p class="contactCardBodyText">
+                <strong>Email:</strong> <a href="mailto:pijeyy@plamigdrinks.ph" style="color: #163583; font-weight: 700;">pijeyy@plamigdrinks.ph</a><br>
+                <strong>Wholesale &amp; Events Hotline:</strong> +63 090909090909<br>
+                <strong>Social Handles:</strong> @plamig.ph on Instagram, TikTok, and Facebook
+              </p>
+            </div>
+
+          </div>
+
+          <div class="contactFormRightCol">
+            <span class="sectionSmallTag">GET IN TOUCH</span>
+            <h2 class="contactFormTitle">SEND US A MESSAGE</h2>
+            <p class="contactFormSubtitle">
+              Want to stock Plamig in your café, convenience store, or upcoming fiesta? Drop your details below and our team will reply within 24 hours.
+            </p>
+
+            <div class="contactSentAlertSuccess" id="contactSentAlertNotice">
+              ✓ Message sent successfully! Our barkada will reach out to you within 24 hours.
+            </div>
+
+            <form class="actualContactForm" id="siteInquiryForm">
+              <!-- name -->
+              <div class="formFieldGroup">
+                <label class="formFieldLabel" for="contactSenderFullName">Full Name</label>
+                <input type="text" id="contactSenderFullName" class="formTextInput" placeholder="e.g. Maria Clara" required>
+              </div>
+
+              <!-- email -->
+              <div class="formFieldGroup">
+                <label class="formFieldLabel" for="contactSenderEmail">Email Address</label>
+                <input type="email" id="contactSenderEmail" class="formTextInput" placeholder="e.g. maria@clara.ph" required>
+              </div>
+
+              <!-- topicc -->
+              <div class="formFieldGroup">
+                <label class="formFieldLabel" for="contactInquiryTopic">Topic</label>
+                <select id="contactInquiryTopic" class="formDropdownSelect" required>
+                  <option value="General Question">General Question</option>
+                  <option value="Wholesale & Stockist">Wholesale &amp; Stockist Inquiry</option>
+                  <option value="Event Catering">Event Catering &amp; Pop-ups</option>
+                  <option value="Order Support">Order &amp; Delivery Support</option>
+                </select>
+              </div>
+
+              <!-- message to the plamig -->
+              <div class="formFieldGroup">
+                <label class="formFieldLabel" for="contactInquiryMessage">Message</label>
+                <textarea id="contactInquiryMessage" class="formTextareaInput" rows="4" placeholder="Tell us how we can help you chill..." required></textarea>
+              </div>
+
+              <!-- submit goew -->
+              <button type="submit" class="contactSubmitBtn">
+                Send Message &gt;
+              </button>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <div class="cartOverlayBg" id="cartOverlay"></div>
+  <aside class="cartDrawerSidebar" id="cartDrawer">
+    <div class="cartDrawerTop">
+      <h3 class="cartDrawerHeading">YOUR ICEBOX</h3>
+      <button class="closeCartBtn" id="closeCartButton">✕</button>
+    </div>
+
+    <div class="freeShippingNoticeBox">
+      <div id="freeShippingNoticeText">Add ₱999 for FREE Nationwide Shipping!</div>
+      <div class="shippingProgressBarTrack">
+        <div class="shippingProgressBarFill" id="freeShippingProgressBar"></div>
+      </div>
+    </div>
+
+    <div class="cartItemsScrollArea" id="cartItemsContainer">
+      <p class="cartEmptyText">Your icebox is empty! Choose your favorite can.</p>
+    </div>
+
+    <div class="cartDrawerBottomCheckout">
+      <div class="subtotalPriceRow">
+        <span>Subtotal</span>
+        <span id="cartSubtotalAmount">₱0.00</span>
+      </div>
+      <a href="products.html" class="primaryOrangeBtn" style="display: block; text-align: center;">Proceed to Checkout</a>
+    </div>
+  </aside>
+
+  <!-- Footer -->
+  <footer class="mainSiteFooter">
+    <div class="pageContainer footerContentGrid">
+      <div class="footerBrandColumn">
+        <h3 class="footerLogoTitle">PLAMIG.</h3>
+        <div class="footerTaglineScript">Filipino Inspired palamig in can!</div>
+        <p class="footerAboutText">
+          Crafting authentic street refreshment classics into sleek, recyclable aluminum cans. Proudly supporting Filipino farmers and kanto culture.
+        </p>
+      </div>
+
+      <div class="footerNavColumn">
+        <h4>Explore</h4>
+        <ul class="footerLinksUl">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="products.html">Flavors &amp; Packs</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footerNewsletterColumn">
+        <h4>CRACK OPEN THE LATEST DROPS.</h4>
+        <p>Get 10% off your first case and exclusive access to limited batch runs.</p>
+
+        <form class="newsletterFormContainer" onsubmit="event.preventDefault(); alert('Salamat! Welcome to the Plamig Barkada.');">
+          <input type="email" placeholder="Enter your email" required class="newsletterInputBox">
+          <button type="submit" class="newsletterJoinBtn">Join the Barkada</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footerGiantWatermark">PLAMIG PALAMIG</div>
+
+    <div class="pageContainer footerBottomCopyrightBar">
+      <div>&copy; 2026 Plamig Beverage Co. All Rights Reserved.</div>
+      <div>Proudly Brewed in the Philippines.</div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

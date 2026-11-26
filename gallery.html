@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gallery</title>
+  <link rel="icon" type="image/png" href="assets/image/plamiglogo.png">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/galleryStyle.css">
+</head>
+<body>
+
+  <!-- Parang sliding announcement bar like yung sa balita -->
+  <div class="slidingTickerBar">
+    <div class="slidingTickerText">
+      FREE NATIONWIDE SHIPPING ON ORDERS OVER ₱999
+      <span>•</span> ICE-COLD NOSTALGIA DELIVERED
+      <span>•</span> OR IS DER NA KAU MGA BES! YOHOOO!
+      <span>•</span> PROJECT NI PIJEY SA CMSC 110 [MP1]
+      <span>•</span> FREE NATIONWIDE SHIPPING ON ORDERS OVER ₱999
+      <span>•</span> ICE-COLD NOSTALGIA DELIVERED
+    </div>
+  </div>
+
+  <!-- Header and Navbar -->
+  <header class="mainHeader">
+    <div class="pageContainer navbarWrapper">
+      <a href="index.html" class="brandLogoLink">
+        <img src="assets/image/plamiglogo.png" alt="Plamig Logo" class="brandLogoImg">
+        <span class="brandLogoText">PLAMIG<span class="brandLogoDot">.</span></span>
+      </a>
+
+      <nav>
+        <ul class="navLinksList">
+          <li><a href="index.html" class="navItemLink">Home</a></li>
+          <li><a href="about.html" class="navItemLink">Our Story</a></li>
+          <li><a href="products.html" class="navItemLink">Flavors &amp; Packs</a></li>
+          <li><a href="gallery.html" class="navItemLink activePage">Gallery</a></li>
+          <li><a href="reviews.html" class="navItemLink">Reviews</a></li>
+          <li><a href="contact.html" class="navItemLink">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="navActionsRight">
+        <button class="iceboxCartButton" id="iceboxCartTrigger">
+          <img src="assets/icons/cartIcon.svg" alt="Cart" class="cartIconImg">
+          <span>Icebox</span>
+          <span class="cartBadgeNumber" id="headerCartBadge">0</span>
+        </button>
+        <a href="products.html" class="orderHeaderBtn">Order a Pack</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="innerPageHeaderSection">
+      <div class="pageContainer">
+        <span class="sectionSmallTag">SUN, STREETS, AND PLAMIG</span>
+        <h1 class="innerPageMainTitle">CAUGHT IN THE WILD</h1>
+        <p class="innerPageSubDesc">
+          From Elyu surf breaks to Manila rooftops—see how the Plamig community chills.
+        </p>
+      </div>
+    </section>
+
+    <section class="galleryMediaSection">
+      <div class="pageContainer">
+
+        <div class="galleryBentoPhotoGrid">
+
+          <article class="singleGalleryPhotoCard">
+            <div class="galleryCardThumbArea" style="background: radial-gradient(circle, #fff3ea 0%, #ffffff 70%);">
+              <img src="assets/image/plamig_orange.png" alt="Plamig Classic Orange Can">
+            </div>
+            <div class="galleryCardCaptionBox">
+              <h3 class="galleryPhotoTitleText">Plamig Classic Orange</h3>
+              <p class="galleryPhotoCaptionText">The Afternoon Merienda Kick — Bright, zesty, and unapologetically bold.</p>
+            </div>
+          </article>
+
+          <article class="singleGalleryPhotoCard">
+            <div class="galleryCardThumbArea" style="background: radial-gradient(circle, #fff0f0 0%, #ffffff 70%);">
+              <img src="assets/image/plamig_sagotgulaman.png" alt="Plamig Sago't Gulaman Can">
+            </div>
+            <div class="galleryCardCaptionBox">
+              <h3 class="galleryPhotoTitleText">Plamig Sago't Gulaman</h3>
+              <p class="galleryPhotoCaptionText">The Undisputed Street King — Deep caramelized arnibal with real chewy pearls.</p>
+            </div>
+          </article>
+
+          <article class="singleGalleryPhotoCard">
+            <div class="galleryCardThumbArea" style="background: radial-gradient(circle, #f8f0fc 0%, #ffffff 70%);">
+              <img src="assets/image/plamig_ube.png" alt="Plamig Creamy Ube Can">
+            </div>
+            <div class="galleryCardCaptionBox">
+              <h3 class="galleryPhotoTitleText">Plamig Creamy Ube</h3>
+              <p class="galleryPhotoCaptionText">The Velvet Fiesta Treat — Creamy, earthy purple yam sweetness in every sip.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+  <div class="cartOverlayBg" id="cartOverlay"></div>
+  <aside class="cartDrawerSidebar" id="cartDrawer">
+    <div class="cartDrawerTop">
+      <h3 class="cartDrawerHeading">YOUR ICEBOX</h3>
+      <button class="closeCartBtn" id="closeCartButton">✕</button>
+    </div>
+
+    <div class="freeShippingNoticeBox">
+      <div id="freeShippingNoticeText">Add ₱999 for FREE Nationwide Shipping!</div>
+      <div class="shippingProgressBarTrack">
+        <div class="shippingProgressBarFill" id="freeShippingProgressBar"></div>
+      </div>
+    </div>
+
+    <div class="cartItemsScrollArea" id="cartItemsContainer">
+      <p class="cartEmptyText">Your icebox is empty! Choose your favorite can.</p>
+    </div>
+
+    <div class="cartDrawerBottomCheckout">
+      <div class="subtotalPriceRow">
+        <span>Subtotal</span>
+        <span id="cartSubtotalAmount">₱0.00</span>
+      </div>
+      <a href="products.html" class="primaryOrangeBtn" style="display: block; text-align: center;">Proceed to Checkout</a>
+    </div>
+  </aside>
+
+
+  <!-- Footer -->
+  <footer class="mainSiteFooter">
+    <div class="pageContainer footerContentGrid">
+      <div class="footerBrandColumn">
+        <h3 class="footerLogoTitle">PLAMIG.</h3>
+        <div class="footerTaglineScript">Filipino Inspired palamig in can!</div>
+        <p class="footerAboutText">
+          Crafting authentic street refreshment classics into sleek, recyclable aluminum cans. Proudly supporting Filipino farmers and kanto culture.
+        </p>
+      </div>
+
+      <div class="footerNavColumn">
+        <h4>Explore</h4>
+        <ul class="footerLinksUl">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="products.html">Flavors &amp; Packs</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="contact.html">Contact &amp; FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footerNewsletterColumn">
+        <h4>CRACK OPEN THE LATEST DROPS.</h4>
+        <p>Get 10% off your first case and exclusive access to limited batch runs.</p>
+
+        <form class="newsletterFormContainer" onsubmit="event.preventDefault(); alert('Salamat! Welcome to the Plamig Barkada.');">
+          <input type="email" placeholder="Enter your email" required class="newsletterInputBox">
+          <button type="submit" class="newsletterJoinBtn">Join the Barkada</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footerGiantWatermark">PLAMIG<br/>  PALAMIG</div>
+
+    <div class="pageContainer footerBottomCopyrightBar">
+      <div>&copy 2026 Plamig Beverage Co. All Rights Reserved.</div>
+      <div>Proudly Brewed in the Philippines.</div>
+    </div>
+  </footer>
+
+  <!-- Script file natinch -->
+  <script src="js/script.js"></script>
+</body>
+</html>

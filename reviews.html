@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reviews</title>
+  <link rel="icon" type="image/png" href="assets/image/plamiglogo.png">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/reviewsStyle.css">
+</head>
+<body>
+
+  <!-- Parang sliding announcement bar like yung sa balita -->
+  <div class="slidingTickerBar">
+    <div class="slidingTickerText">
+      FREE NATIONWIDE SHIPPING ON ORDERS OVER ₱999
+      <span>•</span> ICE-COLD NOSTALGIA DELIVERED
+      <span>•</span> OR IS DER NA KAU MGA BES! YOHOOO!
+      <span>•</span> PROJECT NI PIJEY SA CMSC 110 [MP1]
+      <span>•</span> FREE NATIONWIDE SHIPPING ON ORDERS OVER ₱999
+      <span>•</span> ICE-COLD NOSTALGIA DELIVERED
+    </div>
+  </div>
+
+  <!-- Header and Navbar -->
+  <header class="mainHeader">
+    <div class="pageContainer navbarWrapper">
+      <a href="index.html" class="brandLogoLink">
+        <img src="assets/image/plamiglogo.png" alt="Plamig Logo" class="brandLogoImg">
+        <span class="brandLogoText">PLAMIG<span class="brandLogoDot">.</span></span>
+      </a>
+
+      <nav>
+        <ul class="navLinksList">
+          <li><a href="index.html" class="navItemLink">Home</a></li>
+          <li><a href="about.html" class="navItemLink">Our Story</a></li>
+          <li><a href="products.html" class="navItemLink">Flavors &amp; Packs</a></li>
+          <li><a href="gallery.html" class="navItemLink">Gallery</a></li>
+          <li><a href="reviews.html" class="navItemLink activePage">Reviews</a></li>
+          <li><a href="contact.html" class="navItemLink">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="navActionsRight">
+        <button class="iceboxCartButton" id="iceboxCartTrigger">
+          <img src="assets/icons/cartIcon.svg" alt="Cart" class="cartIconImg">
+          <span>Icebox</span>
+          <span class="cartBadgeNumber" id="headerCartBadge">0</span>
+        </button>
+        <a href="products.html" class="orderHeaderBtn">Order a Pack</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="innerPageHeaderSection">
+      <div class="pageContainer">
+        <span class="sectionSmallTag">4.9 / 5 STARS ACROSS 1,200+ CANS POPPED</span>
+        <h1 class="innerPageMainTitle">REAL REVIEWS FROM REAL BARKADAS</h1>
+      </div>
+    </section>
+
+    <section class="reviewsFeedSection">
+      <div class="pageContainer">
+
+        <div class="ratingHeroSummaryBox">
+          <div class="overallScoreBigCol">
+            <div class="giantScoreNumber">4.9</div>
+            <div class="starsRowYellow">★★★★★</div>
+            <div class="scoreLabelDescription">Verified Customer Rating</div>
+            <span class="sectionSmallTag" style="margin-top: 15px;">1,200+ CANS POPPED</span>
+          </div>
+
+          <div class="ratingBreakdownBarsCol">
+            <div class="singleBreakdownRow">
+              <div class="breakdownTextLabelRow">
+                <span>Taste Authenticity</span>
+                <span>4.9 / 5.0</span>
+              </div>
+              <div class="breakdownTrackBar">
+                <div class="breakdownFillBar" style="width: 98%;"></div>
+              </div>
+            </div>
+
+            <div class="singleBreakdownRow">
+              <div class="breakdownTextLabelRow">
+                <span>Can Design &amp; Chill Factor</span>
+                <span>5.0 / 5.0</span>
+              </div>
+              <div class="breakdownTrackBar">
+                <div class="breakdownFillBar orangeFill" style="width: 100%;"></div>
+              </div>
+            </div>
+
+            <div class="singleBreakdownRow">
+              <div class="breakdownTextLabelRow">
+                <span>Sago &amp; Gulaman Texture</span>
+                <span>4.8 / 5.0</span>
+              </div>
+              <div class="breakdownTrackBar">
+                <div class="breakdownFillBar redFill" style="width: 96%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- revieww cardd -->
+        <div class="customerReviewsGrid" id="customerReviewsContainer">
+
+          <article class="singleReviewItemCard">
+            <div class="reviewCardHeaderRow">
+              <div>
+                <div class="reviewerFullName">Kaywo Alcantara <span class="reviewerCityText">(Makati City)</span></div>
+                <span class="verifiedBuyerBadgeTag"> Verified Buyer: Sago't Gulaman 6-Pack</span>
+              </div>
+              <div class="reviewStarsDisplay">★★★★★</div>
+            </div>
+            <p class="reviewTestimonialQuote">
+              "I was skeptical about how gulaman would hold up inside an aluminum can, but one gentle shake and every sip had chewy bits. Tastes exactly like the suki stall outside my old high school."
+            </p>
+          </article>
+
+          <article class="singleReviewItemCard">
+            <div class="reviewCardHeaderRow">
+              <div>
+                <div class="reviewerFullName">Wendy C. <span class="reviewerCityText">(Baguio City)</span></div>
+                <span class="verifiedBuyerBadgeTag"> Verified Buyer: Creamy Ube</span>
+              </div>
+              <div class="reviewStarsDisplay">★★★★★</div>
+            </div>
+            <p class="reviewTestimonialQuote">
+              "Not overly sweet like artificial ube drinks! The hint of coconut and sea salt makes it super refreshing after a long walk. The blue and orange cans also look aesthetic in photos."
+            </p>
+          </article>
+
+          <article class="singleReviewItemCard">
+            <div class="reviewCardHeaderRow">
+              <div>
+                <div class="reviewerFullName">William L. <span class="reviewerCityText">(Cebu City)</span></div>
+                <span class="verifiedBuyerBadgeTag">Verified Buyer: Barkada Trio Box</span>
+              </div>
+              <div class="reviewStarsDisplay">★★★★★</div>
+            </div>
+            <p class="reviewTestimonialQuote">
+              "Brought the 12-pack to our island hopping trip in Moalboal. Everyone fought over the Classic Orange cans after swimming. Definitely ordering the 24-can Fiesta Case next time."
+            </p>
+          </article>
+
+          <article class="singleReviewItemCard">
+            <div class="reviewCardHeaderRow">
+              <div>
+                <div class="reviewerFullName"> Emma S. <span class="reviewerCityText">(Quezon City)</span></div>
+                <span class="verifiedBuyerBadgeTag"> Verified Buyer: Classic Orange</span>
+              </div>
+              <div class="reviewStarsDisplay">★★★★☆</div>
+            </div>
+            <p class="reviewTestimonialQuote">
+              "Pure childhood nostalgia without the brain-freeze plastic cup struggle. Keep these stocked in your fridge—drinking it ice-cold is non-negotiable."
+            </p>
+          </article>
+
+        </div>
+
+        <div class="dropReviewFormCardWrapper">
+          <div class="reviewFormTitleWrap">
+            <span class="sectionSmallTag">SHARE YOUR THOUGHTS</span>
+            <h2>TASTED PLAMIG? <br/> TELL THE BARKADA.</h2>
+          </div>
+
+          <div class="reviewSuccessAlert" id="reviewSuccessNotice">
+            ✓ Salamat! Your review has been added to the Plamig community board.
+          </div>
+
+          <form class="actualReviewForm" id="customerReviewForm">
+            <div class="formTwoColumnRow">
+
+              <div class="formFieldGroup">
+                <label class="formFieldLabel" for="reviewAuthorName">Your Name</label>
+                <input type="text" id="reviewAuthorName" class="formTextInput" placeholder="e.g. Miguel Santos" required>
+              </div>
+
+              <div class="formFieldGroup">
+                <label class="formFieldLabel" for="reviewSelectedFlavor">Flavor Tried</label>
+                <select id="reviewSelectedFlavor" class="formDropdownSelect" required>
+                  <option value="Classic Orange">Classic Orange</option>
+                  <option value="Sago't Gulaman">Sago't Gulaman</option>
+                  <option value="Creamy Ube">Creamy Ube</option>
+                  <option value="Barkada Trio Box">Barkada Trio Box</option>
+                  <option value="Fiesta Cooler Case">Fiesta Cooler Case</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="formFieldGroup">
+              <label class="formFieldLabel">Star Rating (1–5)</label>
+              <div class="clickableStarSelectorRow">
+                <span class="singleStarPick selectedStar" data-star="1">★</span>
+                <span class="singleStarPick selectedStar" data-star="2">★</span>
+                <span class="singleStarPick selectedStar" data-star="3">★</span>
+                <span class="singleStarPick selectedStar" data-star="4">★</span>
+                <span class="singleStarPick selectedStar" data-star="5">★</span>
+              </div>
+              <input type="hidden" id="starRatingHiddenInput" value="5">
+            </div>
+
+            <div class="formFieldGroup">
+              <label class="formFieldLabel" for="reviewCommentText">Your Review</label>
+              <textarea id="reviewCommentText" class="formTextareaInput" rows="4" placeholder="How did Plamig taste ice-cold? Were the sago and gulaman bouncy?" required></textarea>
+            </div>
+
+            <button type="submit" class="primaryOrangeBtn" style="width: 100%;">
+              Post My Review >
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <div class="cartOverlayBg" id="cartOverlay"></div>
+  <aside class="cartDrawerSidebar" id="cartDrawer">
+    <div class="cartDrawerTop">
+      <h3 class="cartDrawerHeading">YOUR ICEBOX</h3>
+      <button class="closeCartBtn" id="closeCartButton">✕</button>
+    </div>
+
+    <div class="freeShippingNoticeBox">
+      <div id="freeShippingNoticeText">Add ₱999 for FREE Nationwide Shipping!</div>
+      <div class="shippingProgressBarTrack">
+        <div class="shippingProgressBarFill" id="freeShippingProgressBar"></div>
+      </div>
+    </div>
+
+    <div class="cartItemsScrollArea" id="cartItemsContainer">
+      <p class="cartEmptyText">Your icebox is empty! Choose your favorite can.</p>
+    </div>
+
+    <div class="cartDrawerBottomCheckout">
+      <div class="subtotalPriceRow">
+        <span>Subtotal</span>
+        <span id="cartSubtotalAmount">₱0.00</span>
+      </div>
+      <a href="products.html" class="primaryOrangeBtn" style="display: block; text-align: center;">Proceed to Checkout</a>
+    </div>
+  </aside>
+
+
+  <!-- Footer -->
+  <footer class="mainSiteFooter">
+    <div class="pageContainer footerContentGrid">
+      <div class="footerBrandColumn">
+        <h3 class="footerLogoTitle">PLAMIG.</h3>
+        <div class="footerTaglineScript">Filipino Inspired palamig in can!</div>
+        <p class="footerAboutText">
+          Crafting authentic street refreshment classics into sleek, recyclable aluminum cans. Proudly supporting Filipino farmers and kanto culture.
+        </p>
+      </div>
+
+      <div class="footerNavColumn">
+        <h4>Explore</h4>
+        <ul class="footerLinksUl">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="products.html">Flavors &amp; Packs</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="contact.html">Contact &amp; FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footerNewsletterColumn">
+        <h4>CRACK OPEN THE LATEST DROPS.</h4>
+        <p>Get 10% off your first case and exclusive access to limited batch runs.</p>
+
+        <form class="newsletterFormContainer" onsubmit="event.preventDefault(); alert('Salamat! Welcome to the Plamig Barkada.');">
+          <input type="email" placeholder="Enter your email" required class="newsletterInputBox">
+          <button type="submit" class="newsletterJoinBtn">Join the Barkada</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footerGiantWatermark">PLAMIG<br/>  PALAMIG</div>
+
+    <div class="pageContainer footerBottomCopyrightBar">
+      <div>&copy; 2026 Plamig Beverage Co. All Rights Reserved.</div>
+      <div>Proudly Brewed in the Philippines.</div>
+    </div>
+  </footer>
+
+  <!-- Script file natinch -->
+  <script src="js/script.js"></script>
+</body>
+</html>

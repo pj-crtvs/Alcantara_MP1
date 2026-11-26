@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flavors &amp; Packs</title>
+  <link rel="icon" type="image/png" href="assets/image/plamiglogo.png">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/productsStyle.css">
+</head>
+<body>
+
+  <!-- Parang sliding announcement bar like yung sa balita -->
+  <div class="slidingTickerBar">
+    <div class="slidingTickerText">
+      FREE NATIONWIDE SHIPPING ON ORDERS OVER ₱999
+      <span>•</span> ICE-COLD NOSTALGIA DELIVERED
+      <span>•</span> OR IS DER NA KAU MGA BES! YOHOOO!
+      <span>•</span> PROJECT NI PIJEY SA CMSC 110 [MP1]
+      <span>•</span> FREE NATIONWIDE SHIPPING ON ORDERS OVER ₱999
+      <span>•</span> ICE-COLD NOSTALGIA DELIVERED
+    </div>
+  </div>
+
+  <!-- Header and Navbar -->
+  <header class="mainHeader">
+    <div class="pageContainer navbarWrapper">
+      <a href="index.html" class="brandLogoLink">
+        <img src="assets/image/plamiglogo.png" alt="Plamig Logo" class="brandLogoImg">
+        <span class="brandLogoText">PLAMIG<span class="brandLogoDot">.</span></span>
+      </a>
+
+      <nav>
+        <ul class="navLinksList">
+          <li><a href="index.html" class="navItemLink">Home</a></li>
+          <li><a href="about.html" class="navItemLink">Our Story</a></li>
+          <li><a href="products.html" class="navItemLink activePage">Flavors &amp; Packs</a></li>
+          <li><a href="gallery.html" class="navItemLink">Gallery</a></li>
+          <li><a href="reviews.html" class="navItemLink">Reviews</a></li>
+          <li><a href="contact.html" class="navItemLink">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="navActionsRight">
+        <button class="iceboxCartButton" id="iceboxCartTrigger">
+          <img src="assets/icons/cartIcon.svg" alt="Cart" class="cartIconImg">
+          <span>Icebox</span>
+          <span class="cartBadgeNumber" id="headerCartBadge">0</span>
+        </button>
+        <a href="#productsCatalogSection" class="orderHeaderBtn">Order a Pack</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Header Banner -->
+    <section class="innerPageHeaderSection">
+      <div class="pageContainer">
+        <span class="sectionSmallTag">FRESH INGREDIENTS, ICE-COLD CANS</span>
+        <h1 class="innerPageMainTitle">PICK YOUR POUR</h1>
+        <p class="innerPageSubDesc">
+          Available in sleek 330mL cans. Serve straight from the fridge or pour over a glass of shaved ice.
+        </p>
+      </div>
+    </section>
+
+    <section class="productsCatalogSection" id="productsCatalogSection">
+      <div class="pageContainer">
+        
+        <div class="catalogControlsRow">
+          <div>
+            <span class="sectionSmallTag">HORIZONTALLY SCROLLABLE</span>
+            <h2 class="catalogSectionTitle">THE SIGNATURE LINEUP</h2>
+          </div>
+          <div class="horizontalScrollArrowControls">
+            <button class="scrollArrowButton" id="scrollLeftArrowBtn">←</button>
+            <button class="scrollArrowButton" id="scrollRightArrowBtn">→</button>
+          </div>
+        </div>
+
+        <div class="catalogScrollProgressBarTrack">
+          <div class="catalogScrollProgressBarFill" id="catalogProgressBar"></div>
+        </div>
+
+        <div class="horizontalScrollContainer" id="productsScrollTrack">
+
+          <!-- orange -->
+          <article class="cleanProductCard">
+            <div class="productCardCanStage">
+              <div class="productCardTopBadges">
+                <span class="productBadgePill">Best Seller</span>
+                <span class="productVolumePill">330mL</span>
+              </div>
+              <img src="assets/image/plamig_orange.png" alt="Plamig Classic Orange Can" class="productCardImage">
+            </div>
+
+            <div class="productCardContent">
+              <div>
+                <div class="productTitlePriceRow">
+                  <h3 class="productCardItemName">01. Classic Orange</h3>
+                  <div class="productCardPriceTag">₱55.00</div>
+                </div>
+                <p class="productCardNotesText">
+                  Sun-ripened Philippine orange zest balanced with just the right touch of cane sugar sweetness. Crisp, nostalgic, and zero-fizz.
+                </p>
+              </div>
+
+              <div class="productIngredientsBox">
+                <strong>Key Ingredients</strong>
+                Purified water, natural orange juice concentrate, cane sugar, citric acid, natural citrus oil.
+              </div>
+
+              <div class="productCardFooterRow">
+                <button class="addToCartBigBtn"
+                        data-name="Plamig Classic Orange (330mL)"
+                        data-price="55"
+                        data-img="assets/image/plamig_orange.png">
+                  Add to Icebox
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- sagot gulaman-->
+          <article class="cleanProductCard">
+            <div class="productCardCanStage redBg">
+              <div class="productCardTopBadges">
+                <span class="productBadgePill redPill">Fan Favorite</span>
+                <span class="productVolumePill">330mL</span>
+              </div>
+              <img src="assets/image/plamig_sagotgulaman.png" alt="Plamig Sago't Gulaman Can" class="productCardImage">
+            </div>
+
+            <div class="productCardContent">
+              <div>
+                <div class="productTitlePriceRow">
+                  <h3 class="productCardItemName">02. Sago't Gulaman</h3>
+                  <div class="productCardPriceTag redText">₱60.00</div>
+                </div>
+                <p class="productCardNotesText">
+                  Rich, smoky-sweet brown sugar arnibal loaded with bite-sized black gulaman cubes and chewy mini sago pearls. Shake gently before popping!
+                </p>
+              </div>
+
+              <div class="productIngredientsBox">
+                <strong>Key Ingredients</strong>
+                Purified water, muscovado arnibal syrup, grass jelly cubes, tapioca pearls, pandan leaf extract.
+              </div>
+
+              <div class="productCardFooterRow">
+                <button class="addToCartBigBtn redBtn"
+                        data-name="Plamig Sago't Gulaman (330mL)"
+                        data-price="60"
+                        data-img="assets/image/plamig_sagotgulaman.png">
+                  Add to Icebox
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- ube -->
+          <article class="cleanProductCard">
+            <div class="productCardCanStage ubeBg">
+              <div class="productCardTopBadges">
+                <span class="productBadgePill ubePill">Limited Batch</span>
+                <span class="productVolumePill">330mL</span>
+              </div>
+              <img src="assets/image/plamig_ube.png" alt="Plamig Creamy Ube Can" class="productCardImage">
+            </div>
+
+            <div class="productCardContent">
+              <div>
+                <div class="productTitlePriceRow">
+                  <h3 class="productCardItemName">03. Creamy <br/>Ube</h3>
+                  <div class="productCardPriceTag ubeText">₱65.00</div>
+                </div>
+                <p class="productCardNotesText">
+                  Smooth, velvety purple yam blended with a hint of coconut milk richness—like liquid ube halaya made refreshingly light for hot days.
+                </p>
+              </div>
+
+              <div class="productIngredientsBox">
+                <strong>Key Ingredients</strong>
+                Purified water, real purple yam purée, coconut cream powder, cane sugar, sea salt.
+              </div>
+
+              <div class="productCardFooterRow">
+                <button class="addToCartBigBtn ubeBtn"
+                        data-name="Plamig Creamy Ube (330mL)"
+                        data-price="65"
+                        data-img="assets/image/plamig_ube.png">
+                  Add to Icebox
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- bundle 6 pack -->
+          <article class="cleanProductCard">
+            <div class="productCardCanStage">
+              <div class="productCardTopBadges">
+                <span class="productBadgePill">Save ₱25</span>
+                <span class="productVolumePill">6 Cans</span>
+              </div>
+              <div class="bundlePackIconBox">
+                <img src="assets/icons/boxIcon.svg" alt="Box Icon">
+                <span>6-PACK</span>
+              </div>
+            </div>
+
+            <div class="productCardContent">
+              <div>
+                <div class="productTitlePriceRow">
+                  <h3 class="productCardItemName">The Merienda 6-Pack</h3>
+                  <div class="productCardPriceTag">₱320.00</div>
+                </div>
+                <p class="productCardNotesText">
+                  Choose 6 cans of any single flavor. Ideal for solo fridge stocking, weekly work refreshers, or casual merienda treats.
+                </p>
+              </div>
+
+              <div class="productIngredientsBox">
+                <strong>Bundle Details</strong>
+                Includes 6 x 330mL cans of your chosen flavor. Delivered in secure chilled carton.
+              </div>
+
+              <div class="productCardFooterRow">
+                <button class="addToCartBigBtn"
+                        data-name="The Merienda 6-Pack"
+                        data-price="320"
+                        data-img="assets/image/plamig_orange.png">
+                  Add to Icebox
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- barkadach -->
+          <article class="cleanProductCard">
+            <div class="productCardCanStage blueBg">
+              <div class="productCardTopBadges">
+                <span class="productBadgePill bluePill">Save ₱100</span>
+                <span class="productVolumePill">12 Cans</span>
+              </div>
+              <div class="bundlePackIconBox">
+                <img src="assets/icons/trioIcon.svg" alt="Trio Icon">
+                <span>12-TRIO</span>
+              </div>
+            </div>
+
+            <div class="productCardContent">
+              <div>
+                <div class="productTitlePriceRow">
+                  <h3 class="productCardItemName">Barkada Trio Box</h3>
+                  <div class="productCardPriceTag blueText">₱620.00</div>
+                </div>
+                <p class="productCardNotesText">
+                  4 Orange, 4 Sago't Gulaman, and 4 Ube cans in a custom royal-blue carrier box. The all-in-one crowd pleaser.
+                </p>
+              </div>
+
+              <div class="productIngredientsBox">
+                <strong>Bundle Details</strong>
+                Balanced variety box with 4 cans of each core icon. Custom handle box included.
+              </div>
+
+              <div class="productCardFooterRow">
+                <button class="addToCartBigBtn blueBtn"
+                        data-name="The Barkada Trio Box (12 Cans)"
+                        data-price="620"
+                        data-img="assets/image/plamig_sagotgulaman.png">
+                  Add to Icebox
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!--piyestaaa -->
+          <article class="cleanProductCard">
+            <div class="productCardCanStage">
+              <div class="productCardTopBadges">
+                <span class="productBadgePill">Free Shipping</span>
+                <span class="productVolumePill">24 Cans</span>
+              </div>
+              <div class="bundlePackIconBox">
+                <img src="assets/icons/truckIcon.svg" alt="Truck Icon">
+                <span>24-CASE</span>
+              </div>
+            </div>
+
+            <div class="productCardContent">
+              <div>
+                <div class="productTitlePriceRow">
+                  <h3 class="productCardItemName">The Fiesta Cooler Case</h3>
+                  <div class="productCardPriceTag">₱1,199.00</div>
+                </div>
+                <p class="productCardNotesText">
+                  Full party case for beach outings, family reunions, and office pantries. Save ₱241 instantly + Free Nationwide Delivery.
+                </p>
+              </div>
+
+              <div class="productIngredientsBox">
+                <strong>Bundle Details</strong>
+                24 cans assortment (8 Orange, 8 Sago't Gulaman, 8 Ube). Qualifies for Free Shipping.
+              </div>
+
+              <div class="productCardFooterRow">
+                <button class="addToCartBigBtn"
+                        data-name="The Fiesta Cooler Case (24 Cans)"
+                        data-price="1199"
+                        data-img="assets/image/plamig_ube.png">
+                  Add to Icebox
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="cartOverlayBg" id="cartOverlay"></div>
+  <aside class="cartDrawerSidebar" id="cartDrawer">
+    <div class="cartDrawerTop">
+      <h3 class="cartDrawerHeading">YOUR ICEBOX</h3>
+      <button class="closeCartBtn" id="closeCartButton">✕</button>
+    </div>
+
+    <div class="freeShippingNoticeBox">
+      <div id="freeShippingNoticeText">Add ₱999 for FREE Nationwide Shipping!</div>
+      <div class="shippingProgressBarTrack">
+        <div class="shippingProgressBarFill" id="freeShippingProgressBar"></div>
+      </div>
+    </div>
+
+    <div class="cartItemsScrollArea" id="cartItemsContainer">
+      <p class="cartEmptyText">Your icebox is empty! Choose your favorite can.</p>
+    </div>
+
+    <div class="cartDrawerBottomCheckout">
+      <div class="subtotalPriceRow">
+        <span>Subtotal</span>
+        <span id="cartSubtotalAmount">₱0.00</span>
+      </div>
+      <button class="primaryOrangeBtn" onclick="alert('Proceeding to checkout with your icebox selection!');" style="width: 100%; border: none;">
+        Proceed to Checkout
+      </button>
+    </div>
+  </aside>
+
+
+  <!-- Footer -->
+  <footer class="mainSiteFooter">
+    <div class="pageContainer footerContentGrid">
+      <div class="footerBrandColumn">
+        <h3 class="footerLogoTitle">PLAMIG.</h3>
+        <div class="footerTaglineScript">Filipino Inspired palamig in can!</div>
+        <p class="footerAboutText">
+          Crafting authentic street refreshment classics into sleek, recyclable aluminum cans. Proudly supporting Filipino farmers and kanto culture.
+        </p>
+      </div>
+
+      <div class="footerNavColumn">
+        <h4>Explore</h4>
+        <ul class="footerLinksUl">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="products.html">Flavors &amp; Packs</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="contact.html">Contact &amp; FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footerNewsletterColumn">
+        <h4>CRACK OPEN THE LATEST DROPS.</h4>
+        <p>Get 10% off your first case and exclusive access to limited batch runs.</p>
+
+        <form class="newsletterFormContainer" onsubmit="event.preventDefault(); alert('Salamat! Welcome to the Plamig Barkada.');">
+          <input type="email" placeholder="Enter your email" required class="newsletterInputBox">
+          <button type="submit" class="newsletterJoinBtn">Join the Barkada</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footerGiantWatermark">PLAMIG<br/>  PALAMIG</div>
+
+    <div class="pageContainer footerBottomCopyrightBar">
+      <div>&copy; 2026 Plamig Beverage Co. All Rights Reserved.</div>
+      <div>Proudly Brewed in the Philippines.</div>
+    </div>
+  </footer>
+
+  <!-- Script file natinch -->
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,239 @@
+/*implemented this para marepeat nalang yung
+styling ng mga same sections ng website pages */
+
+.reviewsFeedSection {
+  padding: 70px 0px 100px 0px;
+}
+
+.ratingHeroSummaryBox {
+  background-color: #ffffff;
+  border-radius: 24px;
+  padding: 45px 50px;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 60px;
+}
+
+.overallScoreBigCol {
+  width: 320px;
+  text-align: center;
+  border-right: 1px solid #e5e7eb;
+  padding-right: 40px;
+}
+
+.giantScoreNumber {
+  font-family: 'WhiskeyGirls', Impact, sans-serif;
+  font-size: 90px;
+  color: #f16e1c;
+  line-height: 0.9;
+}
+
+.starsRowYellow {
+  color: #f59e0b;
+  font-size: 24px;
+  margin: 5px 0px;
+}
+
+.scoreLabelDescription {
+  font-size: 14px;
+  font-weight: 700;
+  color: #6b7280;
+}
+
+.ratingBreakdownBarsCol {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.singleBreakdownRow {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.breakdownTextLabelRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 700;
+  color: #121316;
+}
+
+.breakdownTrackBar {
+  width: 100%;
+  height: 8px;
+  background-color: #f3f4f6;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.breakdownFillBar {
+  height: 100%;
+  background-color: #163583;
+  border-radius: 10px;
+}
+
+.breakdownFillBar.orangeFill {
+  background-color: #f16e1c;
+}
+
+.breakdownFillBar.redFill {
+  background-color: #d12c2c;
+}
+
+.customerReviewsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-bottom: 70px;
+}
+
+.singleReviewItemCard {
+  width: 565px;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.reviewCardHeaderRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.reviewerFullName {
+  font-size: 17px;
+  font-weight: 800;
+  color: #121316;
+}
+
+.reviewerCityText {
+  font-size: 13px;
+  color: #9ca3af;
+  font-weight: 500;
+}
+
+.verifiedBuyerBadgeTag {
+  display: inline-block;
+  background-color: #edf3ff;
+  color: #163583;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 15px;
+  margin-top: 4px;
+}
+
+.reviewStarsDisplay {
+  color: #f59e0b;
+  font-size: 16px;
+}
+
+.reviewTestimonialQuote {
+  font-size: 15px;
+  color: #4b5563;
+  line-height: 1.7;
+  font-style: italic;
+}
+
+.dropReviewFormCardWrapper {
+  max-width: 800px;
+  margin: 0px auto;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  padding: 45px 50px;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+.reviewFormTitleWrap {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.reviewFormTitleWrap h2 {
+  font-family: 'WhiskeyGirls', Impact, sans-serif;
+  font-size: 38px;
+  color: #d85808;
+  line-height: 0.8;
+}
+
+.reviewSuccessAlert {
+  display: none;
+  background-color: #ecfdf5;
+  border: 1px solid #a7f3d0;
+  color: #065f46;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.actualReviewForm {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.formTwoColumnRow {
+  display: flex;
+  gap: 20px;
+}
+
+.formFieldGroup {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.formFieldLabel {
+  font-size: 13px;
+  font-weight: 700;
+  color: #374151;
+  text-transform: uppercase;
+}
+
+.formTextInput,
+.formDropdownSelect,
+.formTextareaInput {
+  background-color: #f9fafb;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  padding: 12px 15px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 14px;
+  outline: none;
+}
+
+.formTextInput:focus,
+.formDropdownSelect:focus,
+.formTextareaInput:focus {
+  border-color: #f16e1c;
+  background-color: #ffffff;
+}
+
+.clickableStarSelectorRow {
+  display: flex;
+  gap: 8px;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.singleStarPick {
+  color: #d1d5db;
+  transition: color 0.15s;
+}
+
+.singleStarPick.selectedStar {
+  color: #f59e0b;
+}

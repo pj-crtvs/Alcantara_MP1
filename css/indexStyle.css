@@ -1,0 +1,290 @@
+@import url('main.css');
+
+/* Hero section */
+.landingHeroSection {
+  background: radial-gradient(circle at 75% 30%, #fff7f0 0%, #f8f4ec 70%);
+  padding: 60px 0px 80px 0px;
+}
+
+.landingHeroGrid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.landingHeroTextCol {
+  width: 550px;
+}
+
+.landingHeroTitle {
+  font-family: 'WhiskeyGirls', Impact, sans-serif;
+  font-size: 75px;
+  line-height: 0.95;
+  color: #163583;
+  margin-top: 10px;
+}
+
+.landingHeroTitle .orangeTitlePart {
+  color: #f16e1c;
+}
+
+.landingHeroScriptSub {
+  font-family: 'Caveat', cursive;
+  font-size: 38px;
+  color: #f16e1c;
+  margin-bottom: 15px;
+}
+
+.landingHeroParagraph {
+  font-size: 16px;
+  color: #4b5563;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.landingHeroBtnGroup {
+  display: flex;
+  gap: 15px;
+}
+
+/* ----------------------------------------------------
+   SPECIAL CAN OVERLAP EFFECT & HOVER ANIMATIONS
+   Middle image scales up
+   Left image scales up and rotates clockwise (+deg)
+   Right image scales up and rotates counter-clockwise (-deg)
+   ---------------------------------------------------- */
+.flavorCansStageArea {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flavorCanImg {
+  position: absolute;
+  height: 500px;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease, z-index 0.2s ease, filter 0.3s ease;
+  filter: drop-shadow(0px 15px 15px rgba(0, 0, 0, 0.2));
+  cursor: pointer;
+}
+
+/* Base overlapping positions */
+.canLeft {
+  z-index: 2;
+}
+
+.canCenter {
+  z-index: 5;
+}
+
+.canRight {
+  z-index: 2;
+}
+
+
+.flavorCansStageArea:hover .canCenter {
+  transform: scale(1.12) rotate(-10deg);
+  z-index: 10;
+}
+
+.flavorCansStageArea:hover .canLeft {
+  transform: scale(1.08) rotate(20deg)  translateX(120px) translateY(-50px); /* clockwise */
+  z-index: 8;
+}
+
+.flavorCansStageArea:hover .canRight {
+  transform: scale(1.08) rotate(-30deg)  translateX(-120px) translateY(-50px);; /* counter-clockwise */
+  z-index: 8;
+}
+
+
+.brandVibeSection {
+  background-color: #163583;
+  padding: 50px 0px;
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.brandVibeGrid {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.singleVibeCard {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  width: 360px;
+}
+
+.vibeIconWrap {
+  width: 52px;
+  height: 52px;
+  background-color: #f8f4ec;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.vibeIconWrap img {
+  width: 26px;
+  height: 26px;
+}
+
+.singleVibeCard h3 {
+  font-family: 'WhiskeyGirls', Impact, sans-serif;
+  font-size: 20px;
+  color: #f16e1c;
+  margin-bottom: 5px;
+}
+
+.singleVibeCard p {
+  font-size: 14px;
+  color: #f8f4ec;
+  line-height: 1.5;
+}
+
+/* Flavor Mood Switcher (Interactive) */
+.flavorMoodSection {
+  padding: 80px 0px;
+}
+
+.moodSectionTitleWrap {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.moodSectionHeading {
+  font-family: 'WhiskeyGirls', Impact, sans-serif;
+  font-size: 46px;
+  color: #121316;
+}
+
+.flavorTabsList {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 35px;
+}
+
+.singleFlavorTabBtn {
+  background-color: #ffffff;
+  border: 1px solid #d1d5db;
+  padding: 10px 24px;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.singleFlavorTabBtn:hover {
+  border-color: #f16e1c;
+}
+
+.singleFlavorTabBtn.activeTab {
+  background-color: #f16e1c;
+  color: #ffffff;
+  border-color: #f16e1c;
+}
+
+/* Flavor Preview Card */
+.flavorPreviewCardBox {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 24px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+  display: flex;
+  height: 480px;
+  overflow: hidden;
+}
+
+.previewCanMediaCol {
+  width: 50%;
+  background: radial-gradient(circle, #fff3ea 0%, #ffffff 70%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.previewCanMediaCol img {
+  height: 360px;
+  object-fit: contain;
+  filter: drop-shadow(0px 15px 20px rgba(0, 0, 0, 0.15));
+  transition: transform 0.3s ease;
+}
+
+.previewCanMediaCol img:hover {
+  transform: scale(1.05);
+}
+
+.previewContentCol {
+  width: 50%;
+  padding: 60px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flavorVibeBadgeText {
+  display: inline-block;
+  background-color: #fff3ea;
+  color: #f16e1c;
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+  align-self: flex-start;
+}
+
+.previewFlavorNameTitle {
+  font-family: 'WhiskeyGirls', Impact, sans-serif;
+  font-size: 42px;
+  color: #163583;
+  margin-bottom: 5px;
+}
+
+.previewMoodSubhead {
+  font-size: 18px;
+  font-weight: 700;
+  color: #f16e1c;
+  margin-bottom: 15px;
+}
+
+.previewTastingNotesText {
+  font-size: 15px;
+  color: #4b5563;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+/* Beat the init callout */
+.beatTheInitBanner {
+  background-color: #163583;
+  color: #ffffff;
+  padding: 80px 0px;
+  text-align: center;
+}
+
+.beatTheInitTitle {
+  font-family: 'WhiskeyGirls', Impact, sans-serif;
+  font-size: 56px;
+  margin-bottom: 10px;
+}
+
+.beatTheInitDesc {
+  font-size: 17px;
+  color: #eaddcd;
+  margin-bottom: 25px;
+}

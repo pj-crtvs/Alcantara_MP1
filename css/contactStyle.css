@@ -1,0 +1,153 @@
+
+.contactPageSection {
+  padding: 60px 0px 100px 0px;
+}
+
+.contactSplitLayoutGrid {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.contactDetailsLeftCol {
+  width: 460px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contactInfoCardBox {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  padding: 28px 30px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+.contactCardHeadingTitle {
+  font-family: 'WhiskeyGirls', Impact, sans-serif;
+  font-size: 22px;
+  color: #163583;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contactCardHeadingTitle img {
+  width: 20px;
+  height: 20px;
+}
+
+.contactCardBodyText {
+  font-size: 15px;
+  color: #4b5563;
+  line-height: 1.75;
+}
+
+.contactFormRightCol {
+  flex: 1;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  padding: 40px 45px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.04);
+}
+
+.contactFormTitle {
+  font-family: 'WhiskeyGirls', Impact, sans-serif;
+  font-size: 38px;
+  color: #163583;
+  margin-top: 6px;
+  margin-bottom: 8px;
+  line-height: 1.1;
+}
+
+.contactFormSubtitle {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.contactSentAlertSuccess {
+  display: none;
+  background-color: #ecfdf5;
+  border: 1px solid #a7f3d0;
+  color: #065f46;
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.actualContactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 100%;
+}
+
+.actualContactForm .formFieldGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  width: 100%;
+}
+
+.actualContactForm .formFieldLabel {
+  font-size: 13px;
+  font-weight: 700;
+  color: #374151;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.actualContactForm .formTextInput,
+.actualContactForm .formDropdownSelect,
+.actualContactForm .formTextareaInput {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #f9fafb;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  padding: 12px 16px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 14px;
+  color: #121316;
+  outline: none;
+  transition: border-color 0.2s, background-color 0.2s;
+}
+
+.actualContactForm .formTextInput:focus,
+.actualContactForm .formDropdownSelect:focus,
+.actualContactForm .formTextareaInput:focus {
+  border-color: #f16e1c;
+  background-color: #ffffff;
+}
+
+.actualContactForm .formTextareaInput {
+  resize: vertical;
+  min-height: 110px;
+  line-height: 1.5;
+}
+
+.contactSubmitBtn {
+  width: 100%;
+  background-color: #f16e1c;
+  color: #ffffff;
+  padding: 14px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  border: none;
+  margin-top: 5px;
+  transition: background-color 0.2s;
+}
+
+.contactSubmitBtn:hover {
+  background-color: #d85808;
+}

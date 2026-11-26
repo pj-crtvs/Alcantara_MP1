@@ -1,0 +1,297 @@
+
+.productsCatalogSection {
+  padding: 70px 0px 100px 0px;
+}
+
+.catalogControlsRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 25px;
+}
+
+.catalogSectionTitle {
+  font-family: 'WhiskeyGirls', Impact, sans-serif;
+  font-size: 38px;
+  color: #163583;
+  margin-top: 5px;
+}
+
+.horizontalScrollArrowControls {
+  display: flex;
+  gap: 10px;
+}
+
+.scrollArrowButton {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 1px solid #d1d5db;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.scrollArrowButton:hover {
+  background-color: #f16e1c;
+  color: #ffffff;
+  border-color: #f16e1c;
+}
+
+.catalogScrollProgressBarTrack {
+  width: 100%;
+  height: 5px;
+  background-color: #e5e7eb;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.catalogScrollProgressBarFill {
+  height: 100%;
+  width: 20%;
+  background-color: #f16e1c;
+  transition: width 0.1s ease;
+}
+
+.horizontalScrollContainer {
+  display: flex;
+  gap: 25px;
+  overflow-x: auto;
+  padding: 10px 5px 30px 5px;
+  scroll-behavior: smooth;
+}
+
+/* hide the default scrowll bar */
+.horizontalScrollContainer::-webkit-scrollbar {
+  height: 0px;
+}
+
+
+.cleanProductCard {
+  width: 350px;
+  min-width: 350px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cleanProductCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 14px 30px rgba(0, 0, 0, 0.1);
+}
+
+.productCardCanStage {
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: radial-gradient(circle, #fff3ea 0%, #ffffff 70%);
+}
+
+.productCardCanStage.redBg {
+  background: radial-gradient(circle, #fff0f0 0%, #ffffff 70%);
+}
+
+.productCardCanStage.ubeBg {
+  background: radial-gradient(circle, #f8f0fc 0%, #ffffff 70%);
+}
+
+.productCardCanStage.blueBg {
+  background: radial-gradient(circle, #edf3ff 0%, #ffffff 70%);
+}
+
+.productCardTopBadges {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.productBadgePill {
+  background-color: #f16e1c;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+.productBadgePill.redPill {
+  background-color: #d12c2c;
+}
+
+.productBadgePill.ubePill {
+  background-color: #70388e;
+}
+
+.productBadgePill.bluePill {
+  background-color: #163583;
+}
+
+.productVolumePill {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #374151;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 20px;
+  border: 1px solid #e5e7eb;
+}
+
+.productCardImage {
+  height: 200px;
+  object-fit: contain;
+  filter: drop-shadow(0px 12px 15px rgba(0, 0, 0, 0.16));
+  transition: transform 0.2s ease;
+}
+
+.cleanProductCard:hover .productCardImage {
+  transform: scale(1.06);
+}
+
+.bundlePackIconBox {
+  width: 90px;
+  height: 90px;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.bundlePackIconBox img {
+  width: 38px;
+  height: 38px;
+}
+
+.bundlePackIconBox span {
+  font-family: 'WhiskeyGirls', Impact, sans-serif;
+  font-size: 14px;
+  color: #163583;
+}
+
+.productCardContent {
+  padding: 22px 25px 25px 25px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.productTitlePriceRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.productCardItemName {
+  font-family: 'WhiskeyGirls', Impact, sans-serif;
+  font-size: 22px;
+  line-height: 0.8;
+  color: #121316;
+}
+
+.productCardPriceTag {
+  font-size: 20px;
+  font-weight: 800;
+  color: #f16e1c;
+}
+
+.productCardPriceTag.redText {
+  color: #d12c2c;
+}
+
+.productCardPriceTag.ubeText {
+  color: #70388e;
+}
+
+.productCardPriceTag.blueText {
+  color: #163583;
+}
+
+.productCardNotesText {
+  font-size: 13px;
+  color: #4b5563;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.productIngredientsBox {
+  background-color: #f8f4ec;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 12px;
+  color: #6b7280;
+  line-height: 1.5;
+  margin-bottom: 18px;
+}
+
+.productIngredientsBox strong {
+  display: block;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #121316;
+  margin-bottom: 3px;
+}
+
+.productCardFooterRow {
+  display: flex;
+  gap: 10px;
+}
+
+.addToCartBigBtn {
+  flex: 1;
+  background-color: #f16e1c;
+  color: #ffffff;
+  border: none;
+  border-radius: 25px;
+  padding: 10px;
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.addToCartBigBtn:hover {
+  background-color: #d85808;
+}
+
+.addToCartBigBtn.redBtn {
+  background-color: #d12c2c;
+}
+
+.addToCartBigBtn.redBtn:hover {
+  background-color: #b72020;
+}
+
+.addToCartBigBtn.ubeBtn {
+  background-color: #70388e;
+}
+
+.addToCartBigBtn.ubeBtn:hover {
+  background-color: #5d2b77;
+}
+
+.addToCartBigBtn.blueBtn {
+  background-color: #163583;
+}
+
+.addToCartBigBtn.blueBtn:hover {
+  background-color: #0f2662;
+}

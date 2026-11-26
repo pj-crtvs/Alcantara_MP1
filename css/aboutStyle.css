@@ -1,0 +1,184 @@
+.aboutOriginSection {
+  padding: 80px 0px;
+}
+
+.aboutOriginGrid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.aboutOriginTextColumn {
+  width: 580px;
+}
+
+.aboutOriginSubheading {
+  font-family: 'WhiskeyGirls', Impact, sans-serif;
+  font-size: 38px;
+  color: #163583;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+
+.aboutOriginParagraph {
+  font-size: 16px;
+  color: #4b5563;
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+
+.aboutOriginMediaColumn {
+  width: 480px;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutOriginImageCard {
+  background-color: #f16e1c;
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e5e7eb;
+  text-align: center;
+}
+
+.aboutOriginCanImg {
+  height: 320px;
+  object-fit: contain;
+  filter: drop-shadow(0px 15px 20px rgba(0, 0, 0, 0.15));
+}
+
+.aboutTestTag {
+  display: inline-block;
+  background-color: #fff0f0;
+  color: #d12c2c;
+  font-weight: 800;
+  font-size: 12px;
+  padding: 6px 16px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+/* Mission and vision 2 cards */
+.missionVisionSection {
+  padding: 20px 0px 80px 0px;
+}
+
+.missionVisionGrid {
+  display: flex;
+  gap: 30px;
+}
+
+.missionVisionCard {
+  flex: 1;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 45px 40px;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e5e7eb;
+}
+
+.missionCardBorder {
+  border-left: 6px solid #f16e1c;
+}
+
+.visionCardBorder {
+  border-left: 6px solid #163583;
+}
+
+.missionVisionCardTitle {
+  font-family: 'WhiskeyGirls', Impact, sans-serif;
+  font-size: 32px;
+  color: #121316;
+  margin-bottom: 15px;
+}
+
+.missionVisionCardText {
+  font-size: 16px;
+  color: #4b5563;
+  line-height: 1.8;
+}
+
+/* Founder note section */
+.founderNoteSection {
+  background-color: #163583;
+  padding: 80px 0px;
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: center;
+}
+
+.founderNoteCard {
+  max-width: 850px;
+  margin: 0px auto;
+}
+
+.founderQuoteBigMark {
+  font-family: 'WhiskeyGirls', Impact, sans-serif;
+  font-size: 80px;
+  color: #f16e1c;
+  line-height: 0.8;
+  margin-bottom: 10px;
+}
+
+.founderQuoteParagraph {
+  font-size: 22px;
+  font-style: italic;
+  color: #e5e7eb;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.founderSignatureName {
+  font-size: 15px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #f16e1c;
+}
+
+.brewingProcessSection {
+  padding: 90px 0px;
+}
+
+.brewingHeadingWrapper {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.brewingStepGrid {
+  display: flex;
+  gap: 30px;
+}
+
+.singleBrewStepCard {
+  flex: 1;
+  background-color: #ffffff;
+  border-radius: 18px;
+  padding: 35px 30px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.04);
+}
+
+.brewStepNumber {
+  font-family: 'WhiskeyGirls', Impact, sans-serif;
+  font-size: 45px;
+  color: #f16e1c;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.brewStepHeading {
+  font-family: 'WhiskeyGirls', Impact, sans-serif;
+  font-size: 22px;
+  color: #121316;
+  margin-bottom: 12px;
+}
+
+.brewStepDescription {
+  font-size: 14px;
+  color: #4b5563;
+  line-height: 1.7;
+}
